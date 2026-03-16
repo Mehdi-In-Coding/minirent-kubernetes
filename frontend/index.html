@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiniRent</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>MiniRent</h1>
+    <p class="subtitle">Catalogue produits et réservations</p>
+
+    <section class="card">
+      <h2>Produits</h2>
+      <button onclick="loadProducts()">Charger les produits</button>
+      <ul id="products-list"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Créer une réservation</h2>
+      <form id="reservation-form">
+        <input type="text" id="customer_name" placeholder="Nom du client" required />
+        <input type="number" id="product_id" placeholder="ID produit" required />
+        <button type="submit">Réserver</button>
+      </form>
+      <p id="message"></p>
+    </section>
+
+    <section class="card">
+      <h2>Réservations</h2>
+      <button onclick="loadReservations()">Charger les réservations</button>
+      <ul id="reservations-list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
