@@ -22,3 +22,10 @@ spec:
                 name: reservation-service
                 port:
                   number: 3002
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: frontend
+                port:
+                  number: 80
