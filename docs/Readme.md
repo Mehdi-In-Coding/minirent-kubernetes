@@ -59,15 +59,15 @@ Tests réalisés :
 - vérification de l’insertion dans PostgreSQL
 - test du frontend dans le navigateur
 
-### 8Captures d’écran à fournir
-
-Ajouter ici :
-- GitHub du projet
+### Procédures
 - Docker Hub des images
 - `kubectl get pods`
 - `kubectl get services`
 - `kubectl get ingress`
-- navigateur avec le frontend
+- navigateur avec le frontend :
+  http://minirent.info/
+  http://minirent.info/products
+  http://minirent.info/reservations
 - test API réussi
 - base PostgreSQL avec la table `reservations`
 
