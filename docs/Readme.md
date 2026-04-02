@@ -1,10 +1,10 @@
 # MiniRent - Projet Docker Kubernetes
 
-## 1. Objectif du projet
+### Objectif du projet
 
 L’objectif du projet est de développer une mini application de réservation en architecture microservices, conteneurisée avec Docker et déployée sur Kubernetes avec Minikube.
 
-## 2. Architecture
+### Architecture
 
 Le projet repose sur trois composants principaux :
 - un service `catalog-service` qui expose la liste des produits
@@ -14,7 +14,7 @@ Le projet repose sur trois composants principaux :
 Un frontend web simple permet de consulter les produits et de créer des réservations.  
 L’exposition des services se fait via un Ingress Kubernetes.
 
-## 3. Technologies utilisées
+### Technologies utilisées
 
 - Node.js
 - Express
@@ -26,14 +26,14 @@ L’exposition des services se fait via un Ingress Kubernetes.
 - GitHub
 - RBAC Kubernetes
 
-## 4. Fonctionnement
+### Fonctionnement
 
 Le service `catalog-service` expose l’endpoint `GET /products`.  
 Le service `reservation-service` expose les endpoints `GET /reservations` et `POST /reservations`.  
 Les réservations sont stockées dans PostgreSQL.  
 Le frontend appelle les API via l’hôte local `minirent.info`.
 
-## 5. Sécurisation
+### Sécurisation
 
 Le cluster a été sécurisé avec :
 - un `ServiceAccount`
@@ -42,7 +42,7 @@ Le cluster a été sécurisé avec :
 
 Cela permet d’appliquer un contrôle d’accès minimal sur les ressources Kubernetes.
 
-## 6. Déploiement
+###  Déploiement
 
 Les applications ont été :
 - dockerisées avec un `Dockerfile`
@@ -50,7 +50,7 @@ Les applications ont été :
 - déployées dans Minikube avec `Deployment` et `Service`
 - exposées via `Ingress`
 
-## 7. Tests réalisés
+### Tests réalisés
 
 Tests réalisés :
 - récupération de la liste des produits
@@ -59,7 +59,7 @@ Tests réalisés :
 - vérification de l’insertion dans PostgreSQL
 - test du frontend dans le navigateur
 
-## 8. Captures d’écran à fournir
+### 8Captures d’écran à fournir
 
 Ajouter ici :
 - GitHub du projet
@@ -71,6 +71,6 @@ Ajouter ici :
 - test API réussi
 - base PostgreSQL avec la table `reservations`
 
-## 9. Bilan
+### Bilan
 
 Ce projet m’a permis de mettre en place une architecture microservices complète avec Docker et Kubernetes, d’utiliser une base PostgreSQL, d’exposer les services via Ingress et d’ajouter une première couche de sécurité avec RBAC.
