@@ -73,4 +73,4 @@ Tests réalisés :
 
 ### Bilan
 
-Ce projet m’a permis de mettre en place une architecture microservices complète avec Docker et Kubernetes, d’utiliser une base PostgreSQL, d’exposer les services via Ingress et d’ajouter une première couche de sécurité avec RBAC.
+Ce projet nous a permis de mettre en place une architecture microservices complète avec Docker et Kubernetes, d’utiliser une base PostgreSQL, d’exposer les services via Ingress et d’ajouter une première couche de sécurité avec RBAC.
