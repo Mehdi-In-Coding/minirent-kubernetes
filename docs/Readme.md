@@ -61,6 +61,8 @@ Tests réalisés :
 
 ### Procédures
 - Docker Hub des images
+- minikube start
+- minikube tunnel
 - `kubectl get pods`
 - `kubectl get services`
 - `kubectl get ingress`
